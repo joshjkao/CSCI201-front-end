@@ -1,0 +1,19 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./app.css"
+
+function SideBar() {
+    return (
+        <div className="sidebar">
+            <h2 className="title">Petabyte</h2>
+            <ul className="no-bullets">
+                <li key={0}><Link to ="/" className="no-decor">Feed</Link></li>
+                <li key={1}><Link to ="/explore" className="no-decor">Explore</Link></li>
+                <li key={2}><Link to ="/profile" className="no-decor">Profile</Link></li>
+                <li key={3}><Link to ="/upload" className="no-decor">Upload</Link></li>
+            </ul>
+        </div>
+    );
+}
+
+export default SideBar;
