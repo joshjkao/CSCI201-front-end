@@ -6,6 +6,7 @@ import "./feedpage.css";
 function FeedPage() {
     const data = [
         {
+            id: 1234,
             username: "Marco Paolieri",
             pfp: "https://qed.usc.edu/paolieri/marco_paolieri.jpg",
             pic: "https://www.petlandtexas.com/wp-content/uploads/2016/08/Red_Bunny_Petland_Puppy.jpg",
@@ -24,6 +25,7 @@ function FeedPage() {
             ]
         },
         {
+            id: 5678,
             username: "Marco Papa",
             pfp: "https://today.usc.edu/wp-content/uploads/2020/08/Screen-Shot-2020-08-05-at-11.56.25-AM.png",
             pic: "https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J",
@@ -50,12 +52,10 @@ function FeedPage() {
     return (
         <>
             <div className="card-list">
-                {data.map((content, index) => (
-                    <PostCard key={index} content={content} />
+                {data.map((content) => (
+                    <PostCard content={content} />
                 ))}
             </div>
-            {/* <h1>Feed Page</h1> */}
-            {/* <PostCard /> */}
         </>
     );
 }

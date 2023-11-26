@@ -9,6 +9,7 @@
     margin-right: auto;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    float: none;
 }
 .profile-photo {
     height: 40px;
@@ -56,4 +57,20 @@
 }
 .comment-section {
     padding-left: 20px;
+}
+.hidden {
+    display: none;
+}
+input {
+    border: 0px;
+    width: 98%;
+}
+input:focus {
+    outline: none;
+}
+.comment-form {
+    width: 70%;
+    border: 2px solid black;
+    margin-left: 10px;
+    border-radius: 4px;
 }
