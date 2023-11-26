@@ -1,6 +1,8 @@
 .upload-post-container {
     max-width: 600px;
-    margin: auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     border: 1px solid #574a0c;
     border-radius: 8px;

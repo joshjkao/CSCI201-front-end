@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProfilePage.css";
 
-export const ProfilePage = () => {
+export const ProfilePage = ({user}) => {
   return (
     <div className="profile-page">
         
@@ -59,7 +59,7 @@ export const ProfilePage = () => {
             <div className="rectangle-4" />
         </div>
         
-          <img src = "profilephoto.png" className="profileimage"></img>
+          <img src = {user.profile_picture} className="profileimage"></img>
           <div className="overlap-7">
             <div className="follow">followers:1</div>
           </div>

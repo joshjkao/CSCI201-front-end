@@ -10,21 +10,22 @@
 ul.no-bullets {
     list-style-type: none; 
 }
-.no-decor {
-    text-decoration: none;
-}
 .title {
     margin-left: 20px;
 }
 a:link {
-color: black;
+    color: black;
+    text-decoration: none;
 }
 a:visited {
-color: black;
+    color: black;
+    text-decoration: none;
 }
 a:hover {
-color: hotpink;
+    color: rgb(54, 105, 47);
+    text-decoration: none;
 }
 a:active {
-color: black;
+    color: black;
+    text-decoration: none;
 }

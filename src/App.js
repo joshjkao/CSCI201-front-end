@@ -13,7 +13,9 @@ function App() {
     setActiveUser({
       id: 0,
       username: "marco",
-      password: "1234"
+      password: "1234",
+      email: "mail@mail.com",
+      profile_picture: "https://qed.usc.edu/paolieri/marco_paolieri.jpg"
     });
   };
 
@@ -29,7 +31,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<FeedPage />} />
                 <Route path="/explore" element={<FeedPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/profile" element={<ProfilePage user={activeUser}/>} />
                 <Route path="/upload" element={<UploadPage />} />
             </Routes>
           </div>

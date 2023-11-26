@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { IoPaw } from "react-icons/io5";
 import "./app.css"
 
 function SideBar() {
     return (
         <div className="sidebar">
-            <h2 className="title">Petabyte</h2>
+            <h2 className="title">
+                <Link to="/">
+                    <IoPaw/> Petabyte
+                </Link>
+            </h2>
             <ul className="no-bullets">
                 <li key={0}><Link to ="/" className="no-decor">Feed</Link></li>
                 <li key={1}><Link to ="/explore" className="no-decor">Explore</Link></li>
