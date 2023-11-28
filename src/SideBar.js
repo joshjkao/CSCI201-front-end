@@ -16,6 +16,7 @@ function SideBar() {
                 <li key={1}><Link to ="/explore" className="no-decor">Explore</Link></li>
                 <li key={2}><Link to ="/profile" className="no-decor">Profile</Link></li>
                 <li key={3}><Link to ="/upload" className="no-decor">Upload</Link></li>
+                <li key={4}><Link to ="/edit" className="no-decor">Edit Profile</Link></li>
             </ul>
         </div>
     );
