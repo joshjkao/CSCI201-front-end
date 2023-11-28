@@ -5,6 +5,7 @@ import FeedPage from './FeedPage';
 import ProfilePage from './ProfilePage';
 import SideBar from './SideBar';
 import UploadPage from './UploadPage.js';
+import EditProfilePage from './EditProfilePage.js';
 
 function App() {
   const [activeUser, setActiveUser] = useState(null);
@@ -13,9 +14,12 @@ function App() {
     setActiveUser({
       id: 0,
       username: "marco",
+      bio:"hi,im marco paolieri, i have a dog",
+      followers:21,
+      following:20,
       password: "1234",
       email: "mail@mail.com",
-      profile_picture: "https://qed.usc.edu/paolieri/marco_paolieri.jpg"
+      profile_picture: "https://qed.usc.edu/paolieri/marco_paolieri.jpg",
     });
   };
 
@@ -33,6 +37,7 @@ function App() {
                 <Route path="/explore" element={<FeedPage />} />
                 <Route path="/profile" element={<ProfilePage user={activeUser}/>} />
                 <Route path="/upload" element={<UploadPage />} />
+                <Route path="/edit" element={<EditProfilePage user={activeUser}/>} />
             </Routes>
           </div>
         </Router>

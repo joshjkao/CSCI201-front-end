@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {FaRegHeart, FaHeart, FaRegCommentAlt} from "react-icons/fa";
 import "./feedpage.css";
 
 function PostCard({content}) {
@@ -26,18 +27,18 @@ function PostCard({content}) {
     return (
         <div className="card" id={content.id} key={content.id}>
             <div className="card-header">
-                <img className="profile-photo" src={content.pfp} />
+                <img className="profile-photo" alt="" src={content.pfp} />
                 <span className="username-text">{content.username}</span>
             </div>
             <div>
-            <img className="post-photo" src={content.pic} />
+            <img className="post-photo" alt="" src={content.pic} />
             </div>
             <div className="card-button-tray">
                 <button onClick={handleLikeClick} className="card-button">
-                    <img src={liked ? "./liked.png" : "./unliked.png"} className="button-icon"/>
+                    {liked ? <FaRegHeart className="button-icon unliked"/> : <FaHeart className="button-icon liked"/>}
                 </button>
                 <button onClick={handleCommentClick} className="card-button">
-                    <img src='./comment.png' className="button-icon"/>
+                    <FaRegCommentAlt className="button-icon unliked"/>
                 </button>
                 {commentBar ? 
                     <form className="comment-form">

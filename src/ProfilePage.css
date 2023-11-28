@@ -1,326 +1,106 @@
-.profile-page {
-    background-color: #ffffff;
+.whole{
+  width: 800px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  float: none;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profileimage{
+    height:160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  .info-box {
+    text-align: center;
+    margin-left: 23%;
+    width:400px;
+    border: 5px solid #ccc;
+    background-color: rgb(181, 191, 162); 
+    padding: 10px; 
+    border-radius: 30px; 
+  }
+ .post-pic{
+    height: 250px;
+    width: 250px;
+    padding-left: 5%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+
+  }
+  .follow{
+    justify-content:center;
+
+    
+  }
+
+  .followers, .following {
+    text-align: center;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+
+  .bio {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    text-align: left; 
+  }
+  
+  .bio span {
+    display: block;
+    margin-bottom: 8px; 
+  }
+
+  .singlepost{
+
+    margin-bottom:20px;
+  }
+
+  .editbutton {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 30px;
   }
   
-  .profile-page .profileimage{
-    height:110px;
-    width: 110px;
-    position: relative;
-    top:10px;
-    border-radius: 50%;
-    padding-left:200px;
-    padding-right: 200px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    object-fit: cover;
-    display: block;
-    margin-top: 60px;
-    z-index: 5
-  }
-  .profile-page .post-pic{
-    position: relative;
-    top:-15px;
-    left: 10px;
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    
-  }
-  .profile-page .post-text{
-    position: relative;
-    top: 20px;
-    left: 106px;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    z-index: 1;
-  }
-  .profile-page .overlap-group-wrapper {
-    background-color: #ffffff;
-    height: 832px;
-    width: 1280px;
-  }
-  
-  .profile-page .overlap-group {
-    background-color: #d9d9d9;
-    height: 658px;
-    left: 123px;
-    position: relative;
-    top: 60px;
-    width: 505px;
-  }
-  
-  .profile-page .overlap {
-    background-color: #ffffff;
-    height: 59px;
-    left: 57px;
-    position: absolute;
-    top: 549px;
-    width: 391px;
-  }
-  
-  .profile-page .text-wrapper {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 292px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 23px;
-    white-space: nowrap;
-  }
-  
-  .profile-page .ellipse {
-    height: 46px;
-    left: 17px;
-    position: absolute;
-    top: 8px;
-    width: 46px;
-  }
-  
+.editbutton button {
+    height: 40px;
+    width: 80px;
+}
+.post-pox{
+    border: 1px solid #ccc;
+    border-radius:20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
 
-  .profile-page .div {
-    background-color: #ffffff;
-    height: 59px;
-    left: 57px;
-    position: absolute;
-    top: 478px;
-    width: 391px;
-  }
-  
-  .profile-page .text-wrapper-2 {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 292px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 22px;
-    white-space: nowrap;
-  }
-  
-  .profile-page .rectangle-2 {
-    background-color: #d9d9d9;
-    height: 18px;
-    left: 105px;
-    position: absolute;
-    top: 20px;
-    width: 153px;
-  }
-  
-  .profile-page .img {
-    height: 46px;
-    left: 17px;
-    position: absolute;
-    top: 7px;
-    width: 46px;
-  }
-  
-  .profile-page .overlap-2 {
-    background-color: #ffffff;
-    height: 59px;
-    left: 57px;
-    position: absolute;
-    top: 407px;
-    width: 391px;
-  }
-  
-  .profile-page .p {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 108px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 241px;
-    width: 313px;
-  }
-  
-  .profile-page .overlap-3 {
-    background-color: #ffffff;
-    height: 59px;
-    left: 57px;
-    position: absolute;
-    top: 265px;
-    width: 391px;
-  }
-  
-  .profile-page .text-wrapper-3 {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 292px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 19px;
-    white-space: nowrap;
-  }
-  
-  .profile-page .ellipse-2 {
-    height: 46px;
-    left: 17px;
-    position: absolute;
-    top: 6px;
-    width: 46px;
-  }
-  
-  .profile-page .overlap-4 {
-    background-color: #ffffff;
-    height: 59px;
-    left: 57px;
-    position: absolute;
-    top: 336px;
-    width: 391px;
-  }
-  
-  .profile-page .information-name-wrapper {
-    background-color: #ffffff;
-    height: 55px;
-    left: 105px;
-    position: absolute;
-    top: 167px;
-    width: 275px;
-  }
-  
-  .profile-page .information-name {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 10px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 4px;
-    width: 246px;
-  }
-  
-  .profile-page .overlap-5 {
-    height: 15px;
-    left: 403px;
-    position: absolute;
-    top: 186px;
-    width: 32px;
-  }
-  
-  .profile-page .rectangle-3 {
-    background-color: #ffffff;
-    height: 14px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 23px;
-  }
-  
-  .profile-page .edit {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: -8px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 20px;
-  }
-  
-  .profile-page .overlap-6 {
-    height: 18px;
-    left: 188px;
-    position: absolute;
-    top: 131px;
-    width: 95px;
-  }
-  
-  .profile-page .rectangle-4 {
-    background-color: #d9d9d9;
-    height: 16px;
-    left: 0;
-    position: absolute;
-    top: 2px;
-    width: 93px;
-  }
-  
-  .profile-page .text-wrapper-5 {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 6px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 89px;
-  }
-  
-  .profile-page .div-wrapper {
-    background-color: #e6c5c5;
-    border-radius: 51px/49px;
-    height: 98px;
-    left: 185px;
-    position: absolute;
-    top: 33px;
-    width: 102px;
-  }
-  
-  .profile-page .text-wrapper-6 {
-    color: #000000;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    left: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 41px;
-  }
-  
-  .profile-page .overlap-7 {
-    background-color: #ffffff;
-    border-radius: 40%;
-    height: 21px;
-    left: 332px;
-    position: absolute;
-    top: 49px;
-    width: 116px;
-  }
-  
-  .profile-page .follow {
-    color: #b03a3a;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 16px;
-    font-weight: 400;
-    left: 15px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 2px;
-    
-  }
-  
-  .profile-page .overlap-8 {
-    background-color: #ffffff;
-    border-radius: 40%;
-    height: 21px;
-    left: 332px;
-    position: absolute;
-    top: 90px;
-    width: 116px;
-  }
+.like{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
 
-  
+.divider{
+  margin-left: 9%;
+  color:lightslategrey;
+  font-weight: bold;
+}
