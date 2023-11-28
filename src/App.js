@@ -6,11 +6,14 @@ import ProfilePage from './ProfilePage';
 import SideBar from './SideBar';
 import UploadPage from './UploadPage.js';
 import EditProfilePage from './EditProfilePage.js';
+import Register from './Register.jsx';
+import Login from './Login.jsx';
+import LandingPage from './LandingPage.js';
 
 function App() {
   const [activeUser, setActiveUser] = useState(null);
 
-  const logIn = () => {
+  const logIn = ({user}) => {
     setActiveUser({
       id: 0,
       username: "marco",
@@ -26,9 +29,13 @@ function App() {
   return (
     <>
       {activeUser == null ? 
-      <div>
-        <button onClick={logIn}>Log In</button>
-      </div> :
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login logIn={logIn}/>} />
+          <Route path="/signup" element={<Register logIn={logIn}/>} />
+        </Routes>
+      </Router>
+      :
       <Router>
         <div>
           <SideBar />
@@ -39,8 +46,8 @@ function App() {
                 <Route path="/upload" element={<UploadPage />} />
                 <Route path="/edit" element={<EditProfilePage user={activeUser}/>} />
             </Routes>
-          </div>
-        </Router>
+        </div>
+      </Router>
       }
     </>
   );

@@ -1,9 +1,10 @@
 import React from 'react'
 import {Typewriter, Cursor } from 'react-simple-typewriter'
 import "./login.css"
+import { Link } from 'react-router-dom';
 
 
-const Login = () => { 
+const Login = ({logIn}) => { 
   const wordsToAdd = ["cute dog photos ", "adorable pet moments",
   "paw-some adventures",
   "pet-friendly hangouts",
@@ -39,9 +40,11 @@ const Login = () => {
         <div className="loginBox">
           <input placeholder="Email" className="loginInput"/>
           <input placeholder="Password" className="loginInput"/>
-          <button className='loginButton'>Log in</button>
+          <button className='loginButton' onClick={logIn}>Log in</button>
           <span className='loginForgot'>Forgot Password?</span>
-          <button className='loginRegisterButton'> Create a new account</button>
+          <Link to="/signup" className='loginRegisterButtonWrapper'>
+            <button className='loginRegisterButton'> Create a new account</button>
+          </Link>
         </div>
       </div>
         </div>

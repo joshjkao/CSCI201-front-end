@@ -74,7 +74,7 @@
   background-color: transparent;  /* Ensure the container has a transparent background */
 }
 
-img {
+.register-img {
   background-color: transparent;  /* Ensure the image itself has a transparent background */
   margin-right: 200px;
  

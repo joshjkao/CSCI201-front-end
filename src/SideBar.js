@@ -8,7 +8,7 @@ function SideBar() {
         <div className="sidebar">
             <h2 className="title">
                 <Link to="/">
-                    <IoPaw/> Petabyte
+                    <IoPaw/> petaByte
                 </Link>
             </h2>
             <ul className="no-bullets">

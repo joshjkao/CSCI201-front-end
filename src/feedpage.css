@@ -79,6 +79,3 @@ input:focus {
     margin-left: 10px;
     border-radius: 4px;
 }
-button:hover {
-    background-color: transparent;
-}

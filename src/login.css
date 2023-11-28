@@ -80,7 +80,6 @@
   
   .loginRegisterButton{
       width: 60%;
-      align-self: center;
       height: 50px;
       border-radius: 10px;
       border: none;
@@ -89,4 +88,9 @@
       font-size: 20px;
       font-weight: 500;
       cursor: pointer;
+  }
+  .loginRegisterButtonWrapper {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: auto;
   }

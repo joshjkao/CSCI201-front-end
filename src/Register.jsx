@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import KeyIcon from '@mui/icons-material/Key';
 
-export default function Register() {
+const Register = ({logIn}) => {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -35,6 +35,8 @@ export default function Register() {
     }
 
     setError('');
+
+    logIn();
   };
   return (
     <div className="register">
@@ -45,7 +47,7 @@ export default function Register() {
             <div className="registerName">
             <PersonIcon/>
             <input
-                placeholder="First Name"
+                placeholder="User Name"
                 className="registerInput"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -101,10 +103,10 @@ export default function Register() {
         </div>
 
         <div className="image-container">
-      <img src='assets/Cute-Puppy-PNG.png' alt="Description of the image" />
+      <img className="register-image" src='Cute-Puppy-PNG.png' alt="Description of the image" />
      </div>
-      
-
     </div>
   )
 }
+
+export default Register;

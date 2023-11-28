@@ -6,6 +6,7 @@ export const EditProfilePage = ({user}) => {
     <div className="edit-profile-container">
         <div className="picture-container">
             <img src={user.profile_picture} className="edit-picture" alt=""></img>
+            <input type="file" id="image" accept="image/*"/>
             <span className="edit-picture-button">Edit</span>
         </div>
         <div className="input-field-container">
