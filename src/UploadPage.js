@@ -44,7 +44,7 @@ const UploadPost = () => {
               onChange={handleImageChange}
             />
           </div>
-          <button type="submit">Post</button>
+          <button className="upload-button"type="submit">Post</button>
         </form>
       </div>
     );

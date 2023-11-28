@@ -37,7 +37,7 @@
     margin-bottom: 16px;
   }
   
-  button {
+  .upload-button {
     background-color: #998952;
     color: #fff;
     padding: 10px;
@@ -47,7 +47,7 @@
     font-size: 20px;
   }
   
-  button:hover {
+  .upload-button:hover {
     background-color: #998952;
   }
 

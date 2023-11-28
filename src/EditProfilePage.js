@@ -33,7 +33,7 @@ export const EditProfilePage = ({user}) => {
             </div>
         </div>
         <div className="edit-button-container">
-            <button>Save Changes</button>
+            <button className="edit-button">Save Changes</button>
         </div>
     </div>
   );
