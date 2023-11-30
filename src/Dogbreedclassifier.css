@@ -1,0 +1,17 @@
+body {
+    background-color: #CDA890;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+  .white-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .results-content {
+    /* Add styles for the content inside the white box if needed */
+  }
+  
