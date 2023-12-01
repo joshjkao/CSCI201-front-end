@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Dogbreedclassifier.css'; // Import your CSS file
+import './Dogbreedclassifier.css'; 
 
 export default function DogBreedClassifier() {
   const [imageLink, setImageLink] = useState('');
