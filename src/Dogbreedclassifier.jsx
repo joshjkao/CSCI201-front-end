@@ -10,12 +10,10 @@ export default function DogBreedClassifier() {
   };
 
   const handleSearch = () => {
-    // Perform a fetch call to your API or server here
-    fetch(`YOUR_API_ENDPOINT?imageLink=${imageLink}`)
+    fetch(`https://b10d-34-173-183-196.ngrok.io/?imageLink=${imageLink}`)
       .then((response) => response.json())
       .then((data) => {
-        // Update searchResults state with the fetched data
-        setSearchResults(`Results for ${imageLink}: ${data.breed}`);
+        setSearchResults(`${data}`);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
