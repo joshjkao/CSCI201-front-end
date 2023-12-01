@@ -35,16 +35,15 @@ export default function DogBreedClassifier() {
         />
       </div>
 
-      {/* Button to Trigger Search */}
+ 
       <div>
         <button onClick={handleSearch}>Search</button>
       </div>
 
-      {/* White Box for Results */}
+    
       <div className="white-box">
         <h2>Breed:</h2>
         <div className="results-content">{searchResults}</div>
-        {/* You can replace the above line with the actual search results */}
       </div>
     </div>
   );
